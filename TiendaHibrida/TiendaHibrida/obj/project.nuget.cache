@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lUaPkVuIpzk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USUARIO\\Downloads\\TiendaHibrida (1)\\TiendaHibrida\\TiendaHibrida.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

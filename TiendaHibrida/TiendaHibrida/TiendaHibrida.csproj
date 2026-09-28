@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TiendaHibrida</RootNamespace>
+    <AssemblyName>TiendaHibrida</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+  </ItemGroup>
+
+  <!-- Le indica a Visual Studio qué archivos son formularios y cuáles van anidados debajo de ellos. -->
+  <ItemGroup>
+    <Compile Update="Forms\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Productos\FrmProductoFisico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Productos\FrmProductoFisico.Designer.cs">
+      <DependentUpon>FrmProductoFisico.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\Productos\FrmProductoFisico.resx">
+      <DependentUpon>FrmProductoFisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Productos\FrmProductoDigital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Productos\FrmProductoDigital.Designer.cs">
+      <DependentUpon>FrmProductoDigital.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\Productos\FrmProductoDigital.resx">
+      <DependentUpon>FrmProductoDigital.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Productos\FrmCatalogoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Productos\FrmCatalogoProductos.Designer.cs">
+      <DependentUpon>FrmCatalogoProductos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\Productos\FrmCatalogoProductos.resx">
+      <DependentUpon>FrmCatalogoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Clientes\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Clientes\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\Clientes\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Ventas\FrmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Ventas\FrmVenta.Designer.cs">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\Ventas\FrmVenta.resx">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Ventas\FrmHistorialVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Ventas\FrmHistorialVentas.Designer.cs">
+      <DependentUpon>FrmHistorialVentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Forms\Ventas\FrmHistorialVentas.resx">
+      <DependentUpon>FrmHistorialVentas.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
